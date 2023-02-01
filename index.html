@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="Pedro Gomes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Title-->
+        <title>Controle de Gastos</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/index.css">
+
+    </head>
+    <body>
+        <form action="" method="post">
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="seu@gmail.com" onchange="onChangeEmail()" required>
+                <span class="error" id="email-required-error">E-mail é obrigatório</span><br>
+                <span class="error" id="email-invalid-error">E-mail inválido</span>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="password" placeholder="Senha" onchange="onChangePassword()" required>
+                <span class="error" id="password-required-error">Senha é obrigatório</span><br>
+                <span class="error">Senha inválido</span>
+            </div>
+
+            <div>
+                <button type="button" class="log" disabled="true" id="login-button" onclick="login()">Entrar</button><br>
+                <button type="button" class="cad" onclick="register()" >Registar</button><br>
+                <button type="button" class="clear" id="recover-password-button" disabled="true">Esqueci Senha</button>
+            </div>
+            
+        </form>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/validation.js"></script>
+        <script src="./js/loading.js"></script>
+
+
+        <!--FIREBASE CONFIG-->
+        <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyBgXG1u0DMUJ5fxEzSPOi2I3XUZgxoOIFA",
+                authDomain: "controle-gastos-4ba26.firebaseapp.com",
+                projectId: "controle-gastos-4ba26",
+                storageBucket: "controle-gastos-4ba26.appspot.com",
+                messagingSenderId: "803973513594",
+                appId: "1:803973513594:web:cca51ccfc8a4d016b2d6c3"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+        </script>
+
+    </body>
+
+</html>
