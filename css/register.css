@@ -1,0 +1,73 @@
+body{
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 30%;
+    height: 85vh;
+    background-color:rgb(54, 54, 52);
+    border: 1px solid darkgrey;
+    border-radius: 8px 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div{
+    margin: 15px 0;
+}
+
+input{
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input, button{
+    padding: 10px 15px;
+    outline: none;
+}
+
+label{
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+button{
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+
+.buttons button{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+}
+
+hr{
+    width: 65%;
+    margin: 10px 0;
+    background-color: beige;
+    border-radius: 8px;
+}
+
+
+.buttons a{
+    position: absolute;
+    top: 1%;
+    left: 45px;
+    font-size: 52px;
+    color: white;
+}

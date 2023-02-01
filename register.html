@@ -11,11 +11,32 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/register.css">
         
     </head>
     <body>
         
+        <form  method="post">
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            </div>
+            <div>
+                <label for="password">Digite sua senha</label><br>
+                <input type="password" name="senha" id="password" placeholder="Senha">
+            </div>
+            <div>
+                <label for="senha">Confirmar Senha</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite novamente sua senha">
+            </div>
+            <hr>
+            <div class="buttons">
+                <button type="submit">Cadastrar</button>
+                <a href="index.html">	
+                    &#129044;</a>
+            </div>
 
+        </form>
         <script src="./js/index.js"></script>
         <script src="./js/validation.js"></script>
     </body>
